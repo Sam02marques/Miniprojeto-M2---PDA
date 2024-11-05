@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>SITE DE CADASTRO DE ALUNO</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/ids.css">
     </head>
     <body>
         <header>
-            <h2>CADASTRO DO ALUNO</h2>
+            <h2>CADASTRO DO ALUNO- PROJETO PDA</h2>
+            <button id="darkModeToggle">Dark Mode</button>
         </header>
         <div id="container">
-            <label>Criar Usuário <input type="text" id="User" name="Name" placeholder="Escreva o nome do aluno" /></label>
+            <label>Cadastrar Aluno <input type="text" id="User" name="Name" placeholder="Escreva o nome do aluno" /></label>
             <button onclick="criarUsuario()">Adicionar Aluno</button>
             <div id="botoes">
             <button onclick="lerUsuarios()">Ver Alunos</button>

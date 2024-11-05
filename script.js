@@ -39,6 +39,7 @@ function atualizarUsuario() {
       const nomeAntigo = usuarios[indice];
       usuarios[indice] = novoNome;
       mostrarMensagem(`Aluno Atualizado: de ${nomeAntigo} para ${novoNome}`);
+      atualizarLista();
     } else {
       mostrarMensagem("Nome inválido.");
     }
@@ -76,4 +77,13 @@ function deletarUsuario(indice) {
     mostrarMensagem("Índice inválido ou aluno não encontrado.");
   }
 }
+
+
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+  // Alterna a classe 'dark-mode' no body
+  document.body.classList.toggle('dark-mode');
+  
+  // Muda o texto do botão
+  this.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark mode';
+});
 

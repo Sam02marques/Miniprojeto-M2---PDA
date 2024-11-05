@@ -1,0 +1,48 @@
+#container{
+    width: 55svw;
+    display: flex;
+    align-content: center;
+    border-color: blueviolet;
+    background-color: #f1ebeb;
+    justify-content: center;
+    margin-left: 220px;
+    margin-top: 100px;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px rgb(148, 125, 170);
+}
+
+#user-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin-left: 0px;
+
+}
+#user-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #ecebeb;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(144, 137, 151);
+    margin-bottom: 8px;
+    color: #252525;
+}
+#resultado.dark-mode{
+    display: flex;
+    justify-content: center;
+    color: rgb(216, 216, 236);
+    color: #252525;
+}
+
+#darkModeToggle{
+    padding: 6px;
+    margin: 10px;
+    color: rgb(238, 224, 224);
+    background-color: rgb(59, 54, 54);
+    border-radius: 50px;
+}
