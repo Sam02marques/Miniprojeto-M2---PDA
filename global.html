@@ -2,15 +2,23 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>SITE DE CADASTRO</title>
+        <title>SITE DE CADASTRO DE ALUNO</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button onclick="criarUsuario()">Criar Usuário</button>
-        <button onclick="lerUsuarios()">Ver Usuários</button>
-        <button onclick="lerUsuarioPorIndice()">Ver Usuário por Índice</button>
-        <button onclick="atualizarUsuario()">Atualizar Usuário</button>
-        <button onclick="deletarUsuario()">Deletar Usuário</button>
+        <header>
+            <h2>CADASTRO DO ALUNO</h2>
+        </header>
+        <div id="container">
+            <label>Criar Usuário <input type="text" id="User" name="Name" placeholder="Escreva o nome do aluno" /></label>
+            <button onclick="criarUsuario()">Adicionar Aluno</button>
+            <div id="botoes">
+            <button onclick="lerUsuarios()">Ver Alunos</button>
+            <button onclick="atualizarUsuario()">Atualizar Aluno</button>
+            </div>
+        </div>
         <div id="resultado"></div>
+        <ul id="user-list"></ul>
     
         
         <script src="script.js"></script>
